@@ -1,0 +1,8 @@
+/users:
+    get:
+        summary: Get all users
+        tags:
+            - User
+        responses:
+            '200':
+                $ref: '../responses/get-all-users.response.yaml'
