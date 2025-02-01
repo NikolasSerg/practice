@@ -339,3 +339,127 @@
 2025-01-29T17:29:49.329Z [info]: Listening on port 3000
 2025-01-29T17:32:08.475Z [info]: Listening on port 3000
 2025-01-29T17:32:21.325Z [info]: Listening on port 3000
+2025-01-29T19:24:07.120Z [info]: Listening on port 3000
+2025-01-31T11:54:00.996Z [info]: Listening on port 3000
+2025-01-31T11:57:45.980Z [info]: Listening on port 3000
+2025-01-31T11:59:13.470Z [info]: Listening on port 3000
+2025-01-31T12:04:10.246Z [info]: Listening on port 3000
+2025-01-31T12:04:55.309Z [info]: Listening on port 3000
+2025-01-31T12:07:41.133Z [info]: Listening on port 3000
+2025-01-31T12:09:04.616Z [info]: Listening on port 3000
+2025-01-31T12:10:41.009Z [info]: Listening on port 3000
+2025-01-31T12:11:18.181Z [info]: Listening on port 3000
+2025-01-31T12:11:49.393Z [info]: Listening on port 3000
+2025-01-31T12:13:22.817Z [info]: Listening on port 3000
+2025-01-31T16:42:58.229Z [info]: Routers: 
+2025-01-31T16:42:58.231Z [info]: ["/home/serg/Documents/projects/practice/backend/src/modules/users/user.routes.ts"]
+2025-01-31T16:42:58.263Z [info]: Listening on port 3000
+2025-01-31T17:07:25.591Z [info]: Routers: 
+2025-01-31T17:07:25.593Z [info]: ["/home/serg/Documents/projects/practice/backend/src/modules/users/user.routes.ts"]
+2025-01-31T17:07:25.623Z [info]: Listening on port 3000
+2025-01-31T17:11:34.167Z [info]: Routers: 
+2025-01-31T17:11:34.169Z [info]: ["/home/serg/Documents/projects/practice/backend/src/modules/users/user.routes.ts"]
+2025-01-31T17:11:34.192Z [info]: Listening on port 3000
+2025-01-31T17:29:37.531Z [info]: Routers: 
+2025-01-31T17:29:37.535Z [info]: ["/home/serg/Documents/projects/practice/backend/src/modules/users/user.routes.ts"]
+2025-01-31T17:29:37.564Z [info]: Listening on port 3000
+2025-01-31T17:39:29.150Z [info]: Routers: 
+2025-01-31T17:39:29.151Z [info]: ["/home/serg/Documents/projects/practice/backend/src/modules/users/user.routes.ts"]
+2025-01-31T17:39:29.172Z [info]: Listening on port 3000
+2025-01-31T17:39:47.514Z [info]: Routers: 
+2025-01-31T17:39:47.516Z [info]: ["/home/serg/Documents/projects/practice/backend/src/modules/users/user.routes.ts"]
+2025-01-31T17:39:47.540Z [info]: Listening on port 3000
+2025-01-31T17:43:18.600Z [info]: Routers: 
+2025-01-31T17:43:18.601Z [info]: ["/home/serg/Documents/projects/practice/backend/src/modules/users/user.routes.ts"]
+2025-01-31T17:43:18.620Z [info]: Listening on port 3000
+2025-01-31T17:46:12.539Z [info]: Routers: 
+2025-01-31T17:46:12.540Z [info]: ["/home/serg/Documents/projects/practice/backend/src/modules/users/user.routes.ts"]
+2025-01-31T17:46:12.560Z [info]: Listening on port 3000
+2025-02-01T17:23:04.338Z [info]: Routers: 
+2025-02-01T17:23:04.339Z [info]: ["/home/serg/Documents/projects/practice/backend/src/modules/users/user.routes.ts"]
+2025-02-01T17:23:04.707Z [info]: Listening on port 3000
+2025-02-01T17:24:17.214Z [info]: Routers: 
+2025-02-01T17:24:17.216Z [info]: ["/home/serg/Documents/projects/practice/backend/src/modules/users/user.routes.ts"]
+2025-02-01T17:24:18.191Z [info]: Listening on port 3000
+2025-02-01T17:25:12.778Z [info]: Routers: 
+2025-02-01T17:25:12.779Z [info]: ["/home/serg/Documents/projects/practice/backend/src/modules/users/user.routes.ts"]
+2025-02-01T17:25:12.827Z [error]: Swagger.json file in not found
+2025-02-01T17:25:12.833Z [info]: Listening on port 3000
+2025-02-01T17:25:28.308Z [info]: Routers: 
+2025-02-01T17:25:28.310Z [info]: ["/home/serg/Documents/projects/practice/backend/src/modules/users/user.routes.ts"]
+2025-02-01T17:25:28.326Z [error]: Swagger.json file in not found
+2025-02-01T17:25:28.333Z [info]: Listening on port 3000
+2025-02-01T17:25:38.053Z [info]: Routers: 
+2025-02-01T17:25:38.054Z [info]: ["/home/serg/Documents/projects/practice/backend/src/modules/users/user.routes.ts"]
+2025-02-01T17:25:38.548Z [error]: Swagger.json file in not found
+2025-02-01T17:25:38.553Z [info]: Listening on port 3000
+2025-02-01T17:27:16.863Z [info]: Routers: 
+2025-02-01T17:27:16.864Z [info]: ["/home/serg/Documents/projects/practice/backend/src/modules/users/user.routes.ts"]
+2025-02-01T17:27:17.275Z [error]: Swagger.json file in not found
+2025-02-01T17:27:17.280Z [info]: Listening on port 3000
+2025-02-01T17:28:33.010Z [info]: Routers: 
+2025-02-01T17:28:33.012Z [info]: ["/home/serg/Documents/projects/practice/backend/src/modules/users/user.routes.ts"]
+2025-02-01T17:28:33.028Z [error]: Swagger.json file in not found
+2025-02-01T17:28:33.033Z [info]: Listening on port 3000
+2025-02-01T17:31:44.485Z [info]: Routers: 
+2025-02-01T17:31:44.487Z [info]: ["/home/serg/Documents/projects/practice/backend/src/modules/users/user.routes.ts"]
+2025-02-01T17:31:44.503Z [error]: Swagger.json file in not found
+2025-02-01T17:31:44.508Z [info]: Listening on port 3000
+2025-02-01T17:31:57.754Z [info]: Routers: 
+2025-02-01T17:31:57.755Z [info]: ["/home/serg/Documents/projects/practice/backend/src/modules/users/user.routes.ts"]
+2025-02-01T17:31:57.768Z [error]: swagger.json file in not found
+2025-02-01T17:31:57.776Z [info]: Listening on port 3000
+2025-02-01T17:32:42.484Z [info]: Routers: 
+2025-02-01T17:32:42.485Z [info]: ["/home/serg/Documents/projects/practice/backend/src/modules/users/user.routes.ts"]
+2025-02-01T17:32:42.501Z [error]: swagger.json file in not found
+2025-02-01T17:32:42.509Z [info]: Listening on port 3000
+2025-02-01T17:42:12.759Z [info]: Routers: 
+2025-02-01T17:42:12.761Z [info]: ["/home/serg/Documents/projects/practice/backend/src/modules/users/user.routes.ts"]
+2025-02-01T17:42:12.779Z [info]: Listening on port 3000
+2025-02-01T17:43:25.477Z [info]: Routers: 
+2025-02-01T17:43:25.478Z [info]: ["/home/serg/Documents/projects/practice/backend/src/modules/users/user.routes.ts"]
+2025-02-01T17:43:25.914Z [error]: swagger.json file in not found
+2025-02-01T17:43:25.920Z [info]: Listening on port 3000
+2025-02-01T17:46:49.921Z [info]: Routers: 
+2025-02-01T17:46:49.922Z [info]: ["/home/serg/Documents/projects/practice/backend/src/modules/users/user.routes.ts"]
+2025-02-01T17:46:50.360Z [error]: Swagger UI is disabled (not in development environment).
+2025-02-01T17:46:50.366Z [info]: Listening on port 3000
+2025-02-01T17:48:01.148Z [info]: Routers: 
+2025-02-01T17:48:01.149Z [info]: ["/home/serg/Documents/projects/practice/backend/src/modules/users/user.routes.ts"]
+2025-02-01T17:48:01.592Z [error]: Swagger UI is disabled (not in development environment).
+2025-02-01T17:48:01.597Z [info]: Listening on port 3000
+2025-02-01T17:50:22.702Z [info]: Routers: 
+2025-02-01T17:50:22.703Z [info]: ["/home/serg/Documents/projects/practice/backend/src/modules/users/user.routes.ts"]
+2025-02-01T17:50:23.169Z [error]: Swagger UI is disabled (not in development environment).
+2025-02-01T17:50:23.174Z [info]: Listening on port 3000
+2025-02-01T17:54:01.631Z [info]: Routers: 
+2025-02-01T17:54:01.632Z [info]: ["/home/serg/Documents/projects/practice/backend/src/modules/users/user.routes.ts"]
+2025-02-01T17:54:02.145Z [error]: Swagger UI is disabled (not in development environment).
+2025-02-01T17:54:02.149Z [info]: Listening on port 3000
+2025-02-01T17:54:27.116Z [info]: Routers: 
+2025-02-01T17:54:27.117Z [info]: ["/home/serg/Documents/projects/practice/backend/src/modules/users/user.routes.ts"]
+2025-02-01T17:54:27.565Z [info]: Listening on port 3000
+2025-02-01T17:59:49.241Z [info]: Routers: 
+2025-02-01T17:59:49.242Z [info]: ["/home/serg/Documents/projects/practice/backend/src/modules/users/user.routes.ts"]
+2025-02-01T17:59:49.758Z [info]: Listening on port 3000
+2025-02-01T18:03:18.579Z [info]: Routers: 
+2025-02-01T18:03:18.580Z [info]: ["/home/serg/Documents/projects/practice/backend/src/modules/users/user.routes.ts"]
+2025-02-01T18:03:18.995Z [info]: Listening on port 3000
+2025-02-01T18:10:01.860Z [info]: Routers: 
+2025-02-01T18:10:01.862Z [info]: ["/home/serg/Documents/projects/practice/backend/src/modules/users/user.routes.ts"]
+2025-02-01T18:10:01.878Z [info]: Listening on port 3000
+2025-02-01T18:11:19.543Z [info]: Routers: 
+2025-02-01T18:11:19.544Z [info]: ["/home/serg/Documents/projects/practice/backend/src/modules/users/user.routes.ts"]
+2025-02-01T18:11:19.983Z [info]: Listening on port 3000
+2025-02-01T18:11:54.882Z [info]: Routers: 
+2025-02-01T18:11:54.884Z [info]: ["/home/serg/Documents/projects/practice/backend/src/modules/users/user.routes.ts"]
+2025-02-01T18:11:54.906Z [info]: Listening on port 3000
+2025-02-01T18:12:30.573Z [info]: Routers: 
+2025-02-01T18:12:30.574Z [info]: ["/home/serg/Documents/projects/practice/backend/src/modules/users/user.routes.ts"]
+2025-02-01T18:12:31.013Z [info]: Listening on port 3000
+2025-02-01T18:15:33.047Z [info]: Routers: 
+2025-02-01T18:15:33.048Z [info]: ["/home/serg/Documents/projects/practice/backend/src/modules/users/user.routes.ts"]
+2025-02-01T18:15:33.483Z [info]: Listening on port 4000
+2025-02-01T18:16:39.645Z [info]: Routers: 
+2025-02-01T18:16:39.646Z [info]: ["/home/serg/Documents/projects/practice/backend/src/modules/users/user.routes.ts"]
+2025-02-01T18:16:39.663Z [info]: Listening on port 4000

@@ -1,2 +1,0 @@
-paths:
-    $ref: './paths/get-all-users.paths.yaml'

@@ -1,7 +1,7 @@
-GetAllUsersResponse:
-    description: A list of users
-    content:
-        application/json:
+# GetAllUsersResponse:
+description: A list of users
+content:
+    application/json:
         schema:
             type: object
             properties:
@@ -9,7 +9,7 @@ GetAllUsersResponse:
                     type: array
                     description: List of users
                     items: 
-                        $ref: '../schemas/user.schema.yaml'
+                        $ref: "../../schemas/user.schema.yaml"
                 meta:
                     type: object
                     description: MetaData of pagination

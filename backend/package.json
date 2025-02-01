@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "NODE_ENV=development ts-node-dev  --ignore-watch node_modules src/index.ts",
-    "start": "node dist/index.js"
+    "dev": "npm run doc:generate && npm run watch",
+    "watch": "NODE_ENV=development ts-node-dev --ignore-watch node_modules src/index.ts",
+    "start": "node dist/index.js",
+    "doc:generate": "swagger-cli bundle src/app/utils/swagger/index.yaml --outfile src/app/swagger/swagger.json",
+    "doc:validate": "swagger-cli validate src/app/utils/swagger/index.yaml"
   },
   "keywords": [],
   "author": "",
@@ -18,10 +21,11 @@
   },
   "devDependencies": {
     "@types/express": "^5.0.0",
+    "@types/js-yaml": "^4.0.9",
     "@types/node": "^22.10.2",
     "@types/swagger-jsdoc": "^6.0.4",
     "@types/swagger-ui-express": "^4.1.7",
-    "@types/js-yaml": "^4.0.9",
+    "swagger-cli": "^4.0.4",
     "swagger-jsdoc": "^6.2.8",
     "swagger-ui-express": "^5.0.1",
     "ts-node-dev": "^2.0.0",

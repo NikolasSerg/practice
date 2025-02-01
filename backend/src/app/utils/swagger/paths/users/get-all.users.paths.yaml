@@ -1,0 +1,8 @@
+# Get all users path
+
+summary: Get all users
+tags:
+    - Users
+responses:
+    "200":
+        $ref: "../../responses/users/get-all.users.response.yaml"

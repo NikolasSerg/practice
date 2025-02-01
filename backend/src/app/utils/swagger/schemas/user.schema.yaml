@@ -1,0 +1,26 @@
+# User schema
+type: object
+properties:
+    id:
+        type: string
+        format: uuid
+        description: Unique identifier of the user
+        example: "123e4567-e89b-12d3-a456-426614174000"
+    name:
+        type: string
+        description: Name of user
+        example: Forest Gamp
+    email:
+        type: string
+        format: email
+        description: Email address of the user
+        example: john.doe@example.com
+    createdAt:
+        type: string
+        format: date-time
+        description: Timestamp when the user was created
+        example: "2025-01-01T12:00:00Z"
+required:
+    - id
+    - name
+    - email

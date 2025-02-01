@@ -1,0 +1,3 @@
+# User APIs
+get:
+    $ref: "./get-all.users.paths.yaml"
