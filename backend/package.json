@@ -6,8 +6,8 @@
     "dev": "npm run doc:generate && npm run watch",
     "watch": "NODE_ENV=development ts-node-dev --ignore-watch node_modules src/index.ts",
     "start": "node dist/index.js",
-    "doc:generate": "swagger-cli bundle src/app/utils/swagger/index.yaml --outfile src/app/swagger/swagger.json",
-    "doc:validate": "swagger-cli validate src/app/utils/swagger/index.yaml"
+    "doc:generate": "swagger-cli bundle src/app/swagger/index.yaml --outfile src/app/swagger/swagger.json",
+    "doc:validate": "swagger-cli validate src/app/swagger/index.yaml"
   },
   "keywords": [],
   "author": "",
