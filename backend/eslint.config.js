@@ -1,26 +1,36 @@
-import prettier from 'prettier'
+import js from "@eslint/js";
+import tseslint from "@typescript-eslint/eslint-plugin";
+import tsParser from "@typescript-eslint/parser";
+import prettierPlugin from "eslint-plugin-prettier";
+import eslintConfigPrettier from "eslint-config-prettier";
+import globals from "globals";
 
 export default [
+    js.configs.recommended,
     {
-        env: {
-            node: true,
-            es2021: true
-        },
-        files: ["src/**/*.ts"],
-        extends: [
-            "eslint:recommended",
-            "plugin:node/recommended",
-            "plugin:prettier/recommended"
-        ],
+        ignores: ["dist", "node_modules", "eslint.config.js"],
+        files: ["**/*.ts"],
         plugins: {
-            prettier 
+            "@typescript-eslint": tseslint,
+            prettier: prettierPlugin,
+        },
+        languageOptions: {
+            globals: {
+                ...globals.browser,
+                ...globals.node,
+                ...globals.es2020,
+            },
+            parser: tsParser,
+            parserOptions: {
+                project: ["tsconfig.json"],
+            },
         },
         rules: {
-            "prettier/prettier": "error",
-            "no-unused-vars": "warn",
-            "no-console": "off",
-            "node/no-unsupported-features/es-syntax": "off",
-            "node/no-missing-import": "off"
-        }
-    }
-] 
+            ...tseslint.configs.recommended.rules, // ✅ Правильний спосіб підключення `recommended`
+            ...prettierPlugin.configs.recommended.rules, // ✅ Підключення Prettier
+            ...eslintConfigPrettier.rules, // ✅ Вимикає конфліктуючі ESLint-правила
+            "prefer-const": "error",
+            "max-params": ["error", 3],
+        },
+    },
+];

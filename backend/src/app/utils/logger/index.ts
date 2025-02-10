@@ -1,4 +1,3 @@
-import path from 'path';
 import winston from 'winston';
 
 const logLevels = {
@@ -9,7 +8,7 @@ const logLevels = {
         http: 3,
         verbose: 4,
         debug: 5,
-        silly: 6
+        silly: 6,
     },
     colors: {
         error: 'red',

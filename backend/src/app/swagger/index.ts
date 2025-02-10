@@ -1,7 +1,7 @@
 import { Application } from 'express';
 import swaggerUi from 'swagger-ui-express';
 import fs from 'fs';
-import logger from '../utils/logger';
+import logger from '../utils/logger/index.js';
 import path from 'path';
 
 
