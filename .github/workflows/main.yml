@@ -10,14 +10,14 @@ jobs:
   MyFirstJob:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Hello script"
-
       - name: Checkout
         uses: actions/checkout@v4
 
+      - run: echo "Hello script"
+
       - name: List files in the repository
         run: |
-          echo: "The repository ${{github.repository}} contain the following files:"
+          echo "The repository ${{github.repository}} contain the following files:"
           tree
       
     
