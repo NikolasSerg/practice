@@ -17,10 +17,9 @@ const logLevels = {
         http: 'magenta',
         verbose: 'cyan',
         debug: 'blue',
-        silly: 'grey'
-    }
+        silly: 'grey',
+    },
 };
-
 
 const logFormat = winston.format.printf(({ timestamp, level, message }) => {
     return `${timestamp} [${level}]: ${message}`;
@@ -34,21 +33,21 @@ const logger = winston.createLogger({
     transports: [
         new winston.transports.Console({
             format: winston.format.combine(
-            winston.format.colorize(),
-            winston.format.timestamp(),
-            logFormat
-            )
+                winston.format.colorize(),
+                winston.format.timestamp(),
+                logFormat,
+            ),
         }),
 
         new winston.transports.File({
             filename: `${logDir}/app.log`,
             level: 'info',
             format: winston.format.combine(
-            winston.format.timestamp(),
-            logFormat
-            )
-        })
-    ]
+                winston.format.timestamp(),
+                logFormat,
+            ),
+        }),
+    ],
 });
 
 winston.addColors(logLevels.colors);

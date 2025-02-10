@@ -87,3 +87,26 @@
 2025-02-07T18:10:06.173Z [info]: ["/home/serg/Documents/projects/practice/backend/src/modules/users/user.routes.ts"]
 2025-02-07T18:10:06.222Z [info]: Swagger was connected
 2025-02-07T18:10:06.226Z [info]: Listening on port 4000
+2025-02-10T16:08:41.634Z [info]: Routers: 
+2025-02-10T16:10:29.029Z [info]: Routers: 
+2025-02-10T16:10:29.031Z [info]: ["/home/serg/Documents/projects/practice/backend/src/modules/users/user.routes.ts"]
+2025-02-10T16:10:42.558Z [info]: Routers: 
+2025-02-10T16:10:42.560Z [info]: ["/home/serg/Documents/projects/practice/backend/src/modules/users/user.routes.ts"]
+2025-02-10T16:11:42.701Z [info]: Routers: 
+2025-02-10T16:11:42.703Z [info]: ["/home/serg/Documents/projects/practice/backend/src/modules/users/user.routes.ts"]
+2025-02-10T16:11:59.549Z [info]: Routers: 
+2025-02-10T16:11:59.551Z [info]: ["/home/serg/Documents/projects/practice/backend/src/modules/users/user.routes.ts"]
+2025-02-10T18:46:30.973Z [info]: Listening on port 4000
+2025-02-10T18:54:17.279Z [info]: Routers: 
+2025-02-10T19:08:51.646Z [info]: Routers: 
+2025-02-10T19:08:51.647Z [info]: ["/home/serg/Documents/projects/practice/backend/src/modules/users/user.routes.ts"]
+2025-02-10T19:08:51.660Z [info]: Swagger was connected
+2025-02-10T19:08:51.664Z [info]: Listening on port 4000
+2025-02-10T19:19:16.450Z [info]: Routers: 
+2025-02-10T19:19:16.451Z [info]: ["/home/serg/Documents/projects/practice/backend/src/modules/users/user.routes.ts"]
+2025-02-10T19:19:16.459Z [info]: Swagger was connected
+2025-02-10T19:19:16.462Z [info]: Listening on port 4000
+2025-02-10T19:19:22.687Z [info]: Routers: 
+2025-02-10T19:19:22.688Z [info]: ["/home/serg/Documents/projects/practice/backend/src/modules/users/user.routes.ts"]
+2025-02-10T19:19:22.695Z [info]: Swagger was connected
+2025-02-10T19:19:22.698Z [info]: Listening on port 4000

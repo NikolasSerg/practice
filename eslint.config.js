@@ -31,6 +31,7 @@ export default [
             ...eslintConfigPrettier.rules, // ✅ Вимикає конфліктуючі ESLint-правила
             "prefer-const": "error",
             "max-params": ["error", 3],
+            "no-console": ["error", { "allow": ["warn", "error"] }]
         },
     },
 ];

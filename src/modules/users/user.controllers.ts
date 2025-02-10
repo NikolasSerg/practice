@@ -1,13 +1,13 @@
 import { Request, Response } from 'express';
-import {getUsersServices} from "./user.services.js";
+import { getUsersServices } from './user.services';
+import logger from '@/utils/logger';
 
 export const getUsersController = async (req: Request, res: Response) => {
     try {
-        console.log('========>>>> controller works');
-        
         const result = await getUsersServices();
         res.json(result);
-    } catch(e) {
+    } catch (e) {
         console.error(e, 'error in controller');
+        logger.error(`${e}, - 'error in controller'`);
     }
-}
+};
