@@ -2,14 +2,17 @@
   "name": "back",
   "version": "1.0.0",
   "scripts": {
-    "dev": "npm run doc:generate && npm run watch",
-    "watch": "cross-env NODE_ENV=development ts-node-dev -r tsconfig-paths/register --ignore-watch node_modules src/index.ts",
-    "start": "cross-env NODE_ENV=production node ./build/src/index.js",
-    "build": "tsc && tsc-alias",
+    "start:dev": "npm run doc:generate && npm run dev",
+    "start:prod": "npm run build:clean && npm run build && npm run prod",
+    "dev": "cross-env NODE_ENV=development ts-node-dev -r tsconfig-paths/register --ignore-watch node_modules src/index.ts",
+    "prod": "cross-env NODE_ENV=production node ./dist/index.js",
+    "build": "tsc && npm run build:postprocess",
+    "build:clean": "rm -r dist; exit 0",
+    "build:postprocess": "tsc-alias -p tsconfig.json --replaceExtensions",
     "doc:generate": "swagger-cli bundle src/app/swagger/index.yaml --outfile src/app/swagger/swagger.json",
     "doc:validate": "swagger-cli validate src/app/swagger/index.yaml",
     "lint": "eslint",
-    "lint:fix": "eslint --fix",
+    "lint:fix": "eslint . --ext .ts --fix",
     "format": "prettier --write ."
   },
   "keywords": [],
@@ -57,7 +60,7 @@
   },
   "lint-staged": {
     "**/*.{js,ts}": [
-      "eslint --fix",
+      "eslint --fix --cache",
       "prettier --write"
     ]
   }

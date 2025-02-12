@@ -21,7 +21,7 @@ function setupSwagger(app: Application): void {
             logger.error('swagger.json file in not found');
         }
     } else {
-        logger.error(
+        logger.warn(
             'Swagger UI is disabled (not in development environment).',
         );
     }
