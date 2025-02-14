@@ -1,13 +1,15 @@
 import path from 'path';
 import { Router } from 'express';
-import logger from '@/utils/logger/index';
+// import logger from '@/utils/logger/index';
+import logger from '../../app/utils/logger/index.js';
 import { glob } from 'glob';
 
 const route = Router();
 
 export function registerRoutes(router: Router) {
-    const modulePath = path.join(process.cwd(), 'src/modules/**/*.routes.*');
-    const routes = glob.sync(modulePath);
+    const baseDir = process.env.NODE_ENV === 'production' ? 'dist' : 'src';
+    const modulePath = path.join(process.cwd(), `${baseDir}/modules/**/*.routes.*`);
+    const routes = glob.sync(modulePath).filter(file => !file.endsWith('.map'));
     logger.info('Routers: ');
     logger.info(JSON.stringify(routes));
     routes.map((route) => register(route, router));

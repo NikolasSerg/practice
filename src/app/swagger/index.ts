@@ -1,7 +1,8 @@
 import { Application } from 'express';
 import swaggerUi from 'swagger-ui-express';
 import fs from 'fs';
-import logger from '@/utils/logger/index';
+// import logger from '@/utils/logger/index';
+import logger from '../../app/utils/logger/index.js';
 import path from 'path';
 
 function setupSwagger(app: Application): void {

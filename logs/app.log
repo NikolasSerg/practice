@@ -110,3 +110,52 @@
 2025-02-10T19:19:22.688Z [info]: ["/home/serg/Documents/projects/practice/backend/src/modules/users/user.routes.ts"]
 2025-02-10T19:19:22.695Z [info]: Swagger was connected
 2025-02-10T19:19:22.698Z [info]: Listening on port 4000
+2025-02-14T11:55:43.661Z [info]: Routers: 
+2025-02-14T11:55:43.661Z [info]: ["/home/sergiu/Documents/projects/practice/src/modules/users/user.routes.ts"]
+2025-02-14T11:55:43.672Z [info]: Swagger was connected
+2025-02-14T11:55:43.673Z [info]: Listening on port 4000
+2025-02-14T12:56:05.261Z [info]: Listening on port 4000
+2025-02-14T12:56:11.098Z [info]: Listening on port 4000
+2025-02-14T13:01:27.124Z [info]: Listening on port 4000
+2025-02-14T13:18:25.829Z [info]: Listening on port 4000
+2025-02-14T13:20:54.579Z [info]: Listening on port 4000
+2025-02-14T13:32:55.043Z [info]: Listening on port 4000
+2025-02-14T13:33:09.213Z [info]: Listening on port 4000
+2025-02-14T13:33:16.110Z [info]: Listening on port 4000
+2025-02-14T13:33:44.015Z [info]: Listening on port 4000
+2025-02-14T13:33:51.633Z [info]: Listening on port 4000
+2025-02-14T13:33:58.544Z [info]: Listening on port 4000
+2025-02-14T13:34:15.506Z [info]: Listening on port 4000
+2025-02-14T13:34:28.910Z [info]: Listening on port 4000
+2025-02-14T13:36:26.920Z [info]: Listening on port 4000
+2025-02-14T13:36:42.752Z [info]: Listening on port 4000
+2025-02-14T13:37:47.433Z [info]: Routers: 
+2025-02-14T13:37:47.433Z [info]: ["/home/sergiu/Documents/projects/practice/src/modules/users/user.routes.ts"]
+2025-02-14T13:37:47.436Z [info]: Listening on port 4000
+2025-02-14T13:43:31.369Z [info]: Routers: 
+2025-02-14T13:43:31.369Z [info]: ["/home/sergiu/Documents/projects/practice/src/modules/users/user.routes.ts"]
+2025-02-14T13:43:31.372Z [info]: Listening on port 4000
+2025-02-14T13:52:32.396Z [info]: Routers: 
+2025-02-14T13:52:32.396Z [info]: ["/home/sergiu/Documents/projects/practice/dist/modules/users/user.routes.js"]
+2025-02-14T13:52:32.399Z [info]: Listening on port 4000
+2025-02-14T13:52:55.230Z [info]: Routers: 
+2025-02-14T13:52:55.231Z [info]: ["/home/sergiu/Documents/projects/practice/src/modules/users/user.routes.ts"]
+2025-02-14T13:52:55.234Z [info]: Listening on port 4000
+2025-02-14T14:00:30.676Z [info]: Routers: 
+2025-02-14T14:00:30.677Z [info]: []
+2025-02-14T14:00:30.680Z [info]: Listening on port 4000
+2025-02-14T14:01:01.330Z [info]: Routers: 
+2025-02-14T14:01:01.330Z [info]: ["/home/sergiu/Documents/projects/practice/src/modules/users/user.routes.ts"]
+2025-02-14T14:01:01.333Z [info]: Listening on port 4000
+2025-02-14T14:01:34.965Z [info]: Routers: 
+2025-02-14T14:01:34.966Z [info]: ["/home/sergiu/Documents/projects/practice/src/modules/users/user.routes.ts"]
+2025-02-14T14:01:34.968Z [info]: Listening on port 4000
+2025-02-14T14:02:21.229Z [info]: Routers: 
+2025-02-14T14:02:21.230Z [info]: ["/home/sergiu/Documents/projects/practice/dist/modules/users/user.routes.js"]
+2025-02-14T14:02:21.233Z [info]: Listening on port 4000
+2025-02-14T14:04:01.792Z [info]: Routers: 
+2025-02-14T14:04:01.792Z [info]: ["/home/sergiu/Documents/projects/practice/src/modules/users/user.routes.ts"]
+2025-02-14T14:04:01.795Z [info]: Listening on port 4000
+2025-02-14T14:04:12.052Z [info]: Routers: 
+2025-02-14T14:04:12.052Z [info]: ["/home/sergiu/Documents/projects/practice/src/modules/users/user.routes.ts"]
+2025-02-14T14:04:12.056Z [info]: Listening on port 4000
