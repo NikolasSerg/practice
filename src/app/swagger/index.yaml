@@ -1,6 +1,6 @@
 openapi: 3.0.0
 info:
-    title: Modular API
-    version: 1.0.0
+  title: Modular API
+  version: 1.0.0
 paths:
-    $ref: ./paths/index.yaml
+  $ref: ./paths/index.yaml

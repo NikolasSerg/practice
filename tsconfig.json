@@ -14,8 +14,8 @@
     "types": ["node"],
     "paths": {
       "@/*": ["src/app/*"],
-      "@modules/*": ["src/modules/*"],
-    },
+      "@modules/*": ["src/modules/*"]
+    }
   },
   "include": ["src/**/*.ts"],
   "exclude": ["node_modules"]

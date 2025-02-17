@@ -8,9 +8,7 @@
     "/api/users": {
       "get": {
         "summary": "Get all users",
-        "tags": [
-          "Users"
-        ],
+        "tags": ["Users"],
         "responses": {
           "200": {
             "description": "A list of users",
@@ -49,11 +47,7 @@
                             "example": "2025-01-01T12:00:00Z"
                           }
                         },
-                        "required": [
-                          "id",
-                          "name",
-                          "email"
-                        ]
+                        "required": ["id", "name", "email"]
                       }
                     },
                     "meta": {

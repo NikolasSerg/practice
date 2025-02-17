@@ -5,18 +5,17 @@
   "scripts": {
     "start:dev": "npm run doc:generate && npm run dev",
     "start:prod": "npm run build:clean && npm run build && npm run prod",
-    "dev2": "nodemon --exec node --loader ts-node/esm ./src/index.ts",
-    "dev3": "nodemon",
-    "dev": "cross-env NODE_ENV=development ts-node-dev -r tsconfig-paths/register --ignore-watch node_modules src/index.ts",
+    "dev": "nodemon",
     "prod": "cross-env NODE_ENV=production node --enable-source-maps dist/index.js",
     "build": "tsc && npm run build:postprocess",
     "build:clean": "rm -r dist; exit 0",
     "build:postprocess": "tsc-alias -p tsconfig.json",
     "doc:generate": "swagger-cli bundle src/app/swagger/index.yaml --outfile src/app/swagger/swagger.json",
     "doc:validate": "swagger-cli validate src/app/swagger/index.yaml",
-    "lint": "eslint",
+    "lint": "eslint --fix",
     "lint:fix": "eslint . --ext .ts --fix",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "prepare": "husky install"
   },
   "keywords": [],
   "author": "",
@@ -57,15 +56,10 @@
     "typescript-eslint": "^8.23.0",
     "yamljs": "^0.3.0"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
   "lint-staged": {
-    "**/*.{js,ts}": [
-      "eslint --fix --cache",
-      "prettier --write"
+    "*.ts": [
+      "prettier --write",
+      "eslint --fix"
     ]
   }
 }
