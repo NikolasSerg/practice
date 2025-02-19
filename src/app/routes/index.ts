@@ -1,7 +1,6 @@
 import path from 'path';
 import { Router } from 'express';
-// import logger from '@/utils/logger/index';
-import logger from '../../app/utils/logger/index.js';
+import logger from '@utils/logger/index.js';
 import { glob } from 'glob';
 
 const route = Router();

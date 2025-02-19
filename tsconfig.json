@@ -1,20 +1,22 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
+    "moduleDetection": "force",
     "module": "NodeNext",
-    "moduleResolution": "nodenext",
-    "baseUrl": "./src",
-    "rootDir": "./src",
-    "outDir": "./dist",
+    "resolveJsonModule": true,
+    "allowJs": true,
     "esModuleInterop": true,
+    "isolatedModules": true,
+    "moduleResolution": "nodenext",
+    "baseUrl": "./",
+    "rootDir": "./src",
     "allowSyntheticDefaultImports": true,
     "skipLibCheck": true,
-    "resolveJsonModule": true,
-    "sourceMap": true,
     "types": ["node"],
     "paths": {
-      "@/*": ["src/app/*"],
-      "@modules/*": ["src/modules/*"]
+      "@app/*": ["src/app/*"],
+      "@modules/*": ["src/modules/*"],
+      "@utils/*": ["src/app/utils/*"],
+      "@routes/*": ["src/app/routes/*"]
     }
   },
   "include": ["src/**/*.ts"],

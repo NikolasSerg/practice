@@ -1,5 +1,4 @@
-// import logger from '@/utils/logger';
-import logger from '../../app/utils/logger/index.js';
+import logger from '@utils/logger/index.js';
 
 export const getUsersServices = async () => {
   try {
