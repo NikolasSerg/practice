@@ -16,7 +16,8 @@
       "@app/*": ["src/app/*"],
       "@modules/*": ["src/modules/*"],
       "@utils/*": ["src/app/utils/*"],
-      "@routes/*": ["src/app/routes/*"]
+      "@routes/*": ["src/app/routes/*"],
+      "@middleware/*": ["src/app/middleware/*"]
     }
   },
   "include": ["src/**/*.ts"],
