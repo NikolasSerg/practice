@@ -3,10 +3,11 @@ import swaggerUi from 'swagger-ui-express';
 import fs from 'fs';
 import logger from '@utils/logger/index.js';
 import path from 'path';
+import * as process from 'node:process';
 
 function setupSwagger(app: Application): void {
   if (process.env.NODE_ENV === 'development') {
-    const swaggerPath = path.join(__dirname, 'swagger.json');
+    const swaggerPath = path.join(process.cwd(), '/src/app/swagger/swagger.json');
     if (fs.existsSync(swaggerPath)) {
       const swaggerDocument = JSON.parse(fs.readFileSync(swaggerPath, 'utf-8'));
       app.use(`/api-docs`, swaggerUi.serve, swaggerUi.setup(swaggerDocument));
