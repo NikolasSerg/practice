@@ -39,3 +39,5 @@ db.connect()
 app.listen(PORT, () => {
   logger.info(`Listening on port ${PORT}`);
 });
+
+export { db };
