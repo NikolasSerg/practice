@@ -6,6 +6,7 @@ import logger from '@utils/logger/index.js';
 import helmet from 'helmet';
 import { DatabaseFactory } from './databases/database.factory.js';
 import { DBTYPE } from './databases/database.types.js';
+import { notFound } from '@middleware/notFound.js';
 
 dotenv.config();
 
@@ -26,6 +27,7 @@ if (process.env.NODE_ENV === 'production') {
 
 app.use(express.json());
 app.use('/api', route);
+app.use(notFound);
 
 setupSwagger(app);
 
