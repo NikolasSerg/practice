@@ -14,6 +14,7 @@
     "types": ["node"],
     "paths": {
       "@app/*": ["src/app/*"],
+      "@databases/*": ["src/databases/*"],
       "@modules/*": ["src/modules/*"],
       "@utils/*": ["src/app/utils/*"],
       "@routes/*": ["src/app/routes/*"],

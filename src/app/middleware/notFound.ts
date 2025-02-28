@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import logger from '@utils/logger/index.js';
+import logger from '@app/utils/logger.js';
 
 export function notFound(req: Request, res: Response) {
   logger.warn(`404 - Route not found: ${req.originalUrl}`);
