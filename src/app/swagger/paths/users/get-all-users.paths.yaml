@@ -1,0 +1,9 @@
+# Get all users path
+
+summary: Get all users
+description: Get all users with pagination (20 items per page) in meta field.
+tags:
+  - Users
+responses:
+  '200':
+    $ref: '../../responses/users/get-all-users.response.yaml'

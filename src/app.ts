@@ -4,10 +4,23 @@ import setupSwagger from '@app/swagger/index.js';
 import route from '@routes/index.js';
 import helmet from 'helmet';
 import { notFound } from '@middleware/notFound.js';
+import cors from 'cors';
 
 dotenv.config();
 
 const app = express();
+
+const whiteList = ['http://localhost:4000'];
+const corsOption = {
+  origin: function (origin, callback) {
+    if (whiteList.indexOf(origin) !== -1) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
+};
+cors(corsOption);
 
 if (process.env.NODE_ENV === 'production') {
   app.use(helmet());
@@ -21,7 +34,7 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 app.use(express.json());
-app.use('/api', route);
+app.use('/', route);
 setupSwagger(app);
 app.use(notFound);
 

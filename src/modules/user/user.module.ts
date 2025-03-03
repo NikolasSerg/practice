@@ -11,4 +11,4 @@ const userController = new UserController(userService);
 
 const router = createUserRouter(userController);
 
-export default { path: '/user', route: router };
+export default router;

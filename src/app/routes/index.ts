@@ -2,6 +2,7 @@ import path from 'path';
 import { Router } from 'express';
 import logger from '@app/utils/logger.js';
 import { glob } from 'glob';
+import { extractRoutes } from '@app/utils/extractPathsFromRoute.js';
 
 const route = Router();
 
@@ -12,7 +13,7 @@ export function registerRoutes(router: Router) {
 
   const paths = glob.sync(modulePath).filter((file) => !file.endsWith('.map'));
 
-  logger.info('Routers: ');
+  logger.info('Modules: ');
   logger.info(JSON.stringify(paths.map((path) => path.match(/([^/]+)\.module\.ts$/)[1])));
 
   paths.map(async (importedRoutesPath) => {
@@ -30,11 +31,13 @@ export function registerRoutes(router: Router) {
 
 async function register(routePath: string, router: Router) {
   const importedRouteModule = await import(routePath);
+
   const nameModule = routePath.split('/').pop();
-  if (!importedRouteModule.default?.path || !importedRouteModule.default?.route) {
-    logger.error(`Error: path or routes of module ${nameModule} are not found`);
+  if (!importedRouteModule.default) {
+    logger.error(`Error: routes of module ${nameModule} are not found`);
   } else {
-    router.use(importedRouteModule.default.path, importedRouteModule.default.route);
+    logger.info(`\n Routes ${nameModule}: \n - ${extractRoutes(importedRouteModule.default).join('; \n - ')};`);
+    router.use('/api', importedRouteModule.default);
   }
 }
 

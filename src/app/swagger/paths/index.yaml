@@ -1,3 +1,9 @@
 # User APIs
-/api/users:
-  $ref: './users/index.yaml'
+
+/api/user/{id}:
+  get:
+    $ref: './users/get-user-by-id.paths.yaml'
+
+/api/users/all:
+  get:
+    $ref: './users/get-all-users.paths.yaml'

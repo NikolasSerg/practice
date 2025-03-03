@@ -7,4 +7,5 @@ export interface IUser {
 
 export interface IUserRepository {
   getAllUsers(): Promise<Array<IUser> | null>;
+  getUserById(id: string): Promise<IUser | null>;
 }

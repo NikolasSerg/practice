@@ -4,7 +4,8 @@ import { UserController } from './user.controllers.js';
 const createUserRouter = (userController: UserController): Router => {
   const router = Router();
 
-  router.get('/all', userController.getAllUsers.bind(userController));
+  router.get('/users/all', userController.getAllUsers.bind(userController));
+  router.get('/user/:id', userController.getUserById.bind(userController));
 
   return router;
 };

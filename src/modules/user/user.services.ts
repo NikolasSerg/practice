@@ -10,4 +10,8 @@ export class UserService {
   async getAllUsers(): Promise<Array<IUser> | null> {
     return this.userRepository.getAllUsers();
   }
+
+  async getUserById(id: string): Promise<IUser | null> {
+    return this.userRepository.getUserById(id);
+  }
 }

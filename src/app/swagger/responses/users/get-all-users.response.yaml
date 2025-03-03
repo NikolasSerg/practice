@@ -9,7 +9,8 @@ content:
           type: array
           description: List of users
           items:
-            $ref: '../../schemas/user.schema.yaml'
+            type: object
+            $ref: '../../schemas/user.schema.yaml#/components/schemas/Users'
         meta:
           type: object
           description: MetaData of pagination

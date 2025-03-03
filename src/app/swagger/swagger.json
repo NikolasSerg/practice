@@ -5,9 +5,82 @@
     "version": "1.0.0"
   },
   "paths": {
-    "/api/users": {
+    "/api/user/{id}": {
+      "get": {
+        "summary": "User by ID",
+        "tags": ["User"],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "schema": {
+              "type": "string"
+            },
+            "required": true,
+            "description": "String ID of the user"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Object of users",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "user": {
+                      "type": "object",
+                      "description": "Object of user",
+                      "userType": "user",
+                      "discriminator": {
+                        "propertyName": "userType",
+                        "mapping": {
+                          "user": "#/User",
+                          "users": "#/Users"
+                        }
+                      },
+                      "properties": {
+                        "id": {
+                          "type": "string",
+                          "format": "uuid",
+                          "description": "Unique identifier of the user",
+                          "example": "123e4567-e89b-12d3-a456-426614174000"
+                        },
+                        "name": {
+                          "type": "string",
+                          "description": "Name of user",
+                          "example": "Forest Gamp"
+                        },
+                        "email": {
+                          "type": "string",
+                          "format": "email",
+                          "description": "Email address of the user",
+                          "example": "john.doe@example.com"
+                        },
+                        "createdAt": {
+                          "type": "string",
+                          "format": "date-time",
+                          "description": "Timestamp when the user was created",
+                          "example": "2025-01-01T12:00:00Z"
+                        },
+                        "objectType": {
+                          "type": "string"
+                        }
+                      },
+                      "required": ["id", "name", "email"]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/users/all": {
       "get": {
         "summary": "Get all users",
+        "description": "Get all users with pagination (20 items per page) in meta field.",
         "tags": ["Users"],
         "responses": {
           "200": {
@@ -22,6 +95,14 @@
                       "description": "List of users",
                       "items": {
                         "type": "object",
+                        "userType": "users",
+                        "discriminator": {
+                          "propertyName": "userType",
+                          "mapping": {
+                            "user": "#/User",
+                            "users": "#/Users"
+                          }
+                        },
                         "properties": {
                           "id": {
                             "type": "string",
@@ -45,6 +126,9 @@
                             "format": "date-time",
                             "description": "Timestamp when the user was created",
                             "example": "2025-01-01T12:00:00Z"
+                          },
+                          "objectType": {
+                            "type": "string"
                           }
                         },
                         "required": ["id", "name", "email"]
