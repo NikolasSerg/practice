@@ -40,6 +40,12 @@ const logger = winston.createLogger({
       level: 'info',
       format: winston.format.combine(winston.format.timestamp(), logFormat),
     }),
+
+    new winston.transports.File({
+      filename: `${logDir}/app.error.log`,
+      level: 'error',
+      format: winston.format.combine(winston.format.timestamp(), logFormat),
+    }),
   ],
 });
 

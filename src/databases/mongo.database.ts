@@ -10,7 +10,9 @@ export class MongoDatabase implements IDatabase {
   }
 
   async connect(): Promise<void> {
-    await mongoose.connect(this.uri);
+    await mongoose.connect(this.uri, {
+      serverSelectionTimeoutMS: 5000,
+    });
     logger.info('Connected to MongoDB');
   }
 
