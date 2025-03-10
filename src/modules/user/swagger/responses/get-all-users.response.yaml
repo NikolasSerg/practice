@@ -1,0 +1,29 @@
+# GetAllUsersResponse:
+description: A list of users
+content:
+  application/json:
+    schema:
+      type: object
+      properties:
+        users:
+          type: array
+          description: List of users
+          items:
+            type: object
+            $ref: '../schemas/user.schema.yaml#/components/schemas/Users'
+        meta:
+          type: object
+          description: MetaData of pagination
+          properties:
+            total:
+              type: integer
+              description: Total number of users
+              example: 15000
+            page:
+              type: integer
+              description: Current page number
+              example: 1
+            pageSize:
+              type: integer
+              description: Number of users per page
+              example: 15

@@ -10,6 +10,6 @@ export class MongoUserRepository implements IUserRepository {
     if (!Types.ObjectId.isValid(id)) {
       throw new Error('Invalid user ID format');
     }
-    return (await UserModel.findById({ _id: id }).lean()) || null;
+    return (await UserModel.findById({ _id: id }).select(Object.keys(UserModel.schema.paths).join(' ')).lean()) || null;
   }
 }

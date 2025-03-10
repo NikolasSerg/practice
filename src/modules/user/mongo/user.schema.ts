@@ -30,6 +30,7 @@ const userSchema: Schema<IUser> = new Schema(
   },
   {
     timestamps: true, // Додає поля createdAt та updatedAt автоматично
+    strict: false,
   },
 );
 

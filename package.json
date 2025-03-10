@@ -7,7 +7,7 @@
     "start:prod": "npm run build:clean && npm run build && npm run prod",
     "dev": "cross-env NODE_ENV=development tsx watch ./src/server.ts",
     "prod": "cross-env NODE_ENV=production node --enable-source-maps dist/server.js",
-    "build": "tsc --project tsconfig.build.json && npm run build:postprocess",
+    "build": "tsc --project tsconfig.build.json",
     "build:clean": "rm -r dist; exit 0",
     "doc:generate": "swagger-cli bundle src/app/swagger/index.yaml --outfile src/app/swagger/swagger.json",
     "doc:validate": "swagger-cli validate src/app/swagger/index.yaml",

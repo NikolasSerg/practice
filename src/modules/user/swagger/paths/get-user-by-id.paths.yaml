@@ -1,0 +1,15 @@
+# Get all users path
+
+summary: User by ID
+tags:
+  - User
+parameters:
+  - in: path
+    name: id
+    schema:
+      type: string
+    required: true
+    description: String ID of the user
+responses:
+  '200':
+    $ref: '../responses/get-user-by-id.response.yaml'
